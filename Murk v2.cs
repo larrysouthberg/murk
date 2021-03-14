@@ -21,7 +21,7 @@ namespace Murk_v2
         static int heroDamage = 20;
         static string heroName = "Неизвестный";
 
-        static string[] mobName = { "Тварь", "Догнивающий", "Рейдер", "Пожиратель" };
+        static string[] mobName = { "Тварь    ", "Догнивающий", "Рейдер   ", "Пожиратель" };
         static int[] mobHealthPoints = { 100, 120, 80, 300 };
         static int[] mobDamage = { 10, 30, 15, 35 };
         static int[] mobCoinsVolume = { 12, 80, 30, 100 };
@@ -76,9 +76,9 @@ namespace Murk_v2
         {
             //print info for battles
             Console.Clear();
-            Console.WriteLine("\n  " + heroName + "\t\t - HP " + "[" + heroHealthPoints + "]" + " DMG " + "[" + heroDamage + "]" + " REG " + "[" + regenNumber + "]");
+            Console.WriteLine("\n  " + heroName + "\t - HP " + "[" + heroHealthPoints + "]" + " DMG " + "[" + heroDamage + "]" + " REG " + "[" + regenNumber + "]");
             Console.WriteLine();
-            Console.WriteLine("  " + mobName + "\t\t - HP " + "[" + mobHealthPoints + "]" + " DMG " + "[" + mobDamage + "]");
+            Console.WriteLine("  " + mobName + "\t - HP " + "[" + mobHealthPoints + "]" + " DMG " + "[" + mobDamage + "]");
             Console.WriteLine();
         }
 
