@@ -14,7 +14,7 @@ namespace Murk_v2
 
         //hero parametrs
         static int heroCoinsVolume = 0;
-        static int regenNumber = 10;
+        static int regenNumber = 12;
         static int regenValue = 30;
         static int heroSkillId = 1;
         static int heroHealthPoints = 100;
@@ -76,9 +76,9 @@ namespace Murk_v2
         {
             //print info for battles
             Console.Clear();
-            Console.WriteLine("\n  " + heroName + "\t - HP " + "[" + heroHealthPoints + "]" + " DMG " + "[" + heroDamage + "]" + " REG " + "[" + regenNumber + "]");
+            Console.WriteLine("\n  " + heroName + "\t\t - HP " + "[" + heroHealthPoints + "]" + " DMG " + "[" + heroDamage + "]" + " REG " + "[" + regenNumber + "]");
             Console.WriteLine();
-            Console.WriteLine("  " + mobName + "\t - HP " + "[" + mobHealthPoints + "]" + " DMG " + "[" + mobDamage + "]");
+            Console.WriteLine("  " + mobName + "\t\t - HP " + "[" + mobHealthPoints + "]" + " DMG " + "[" + mobDamage + "]");
             Console.WriteLine();
         }
 
@@ -326,8 +326,8 @@ namespace Murk_v2
         static void Cave()
         {
             Console.Clear();
-            Console.WriteLine("Произошёл обвал");
-            Console.WriteLine(heroName + " был погребён заживо");
+            Console.WriteLine("\n  Произошёл обвал");
+            Console.WriteLine("  " + heroName + " был погребён заживо");
             Console.ReadLine();
             Menu();
         }
